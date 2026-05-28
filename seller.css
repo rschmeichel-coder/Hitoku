@@ -1,0 +1,124 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#F5F1E8;
+  padding:30px;
+}
+
+.top-bar{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.top-bar h1{
+  color:#4D6B3C;
+}
+
+/* STAT */
+
+.stats{
+  display:flex;
+  gap:20px;
+  margin-bottom:40px;
+}
+
+.stat-card{
+  flex:1;
+
+  background:white;
+
+  padding:25px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.stat-card h3{
+  color:#666;
+}
+
+.stat-card p{
+  font-size:30px;
+  font-weight:bold;
+  color:#4D6B3C;
+  margin-top:10px;
+}
+
+/* SECTION */
+
+.section-title{
+  margin-bottom:20px;
+}
+
+.section-title h2{
+  color:#4D6B3C;
+}
+
+/* ORDER CARD */
+
+.order-card,
+.history-card{
+  background:white;
+
+  padding:25px;
+
+  border-radius:20px;
+
+  margin-bottom:20px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.order-card button{
+  margin-top:15px;
+
+  width:100%;
+
+  padding:12px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#4D6B3C;
+
+  color:white;
+
+  cursor:pointer;
+}
+
+/* HISTORY */
+
+.history-header{
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  margin-top:50px;
+
+  margin-bottom:20px;
+}
+
+.history-header button{
+  background:#dc2626;
+
+  color:white;
+
+  border:none;
+
+  padding:12px 20px;
+
+  border-radius:10px;
+
+  cursor:pointer;
+}

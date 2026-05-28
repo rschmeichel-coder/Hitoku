@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Hitoku Dashboard</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+
+  
+
+  <!-- MAIN CONTENT -->
+
+      <div class="main-content">
+
+        <!-- HOME -->
+
+        <section id="home" class="hero">
+
+      <img src="Logo - 1 - Edited.png" class="hero-logo">
+
+      <h1>HITOKU</h1>
+
+      <p>
+        Premium Matcha Latte dengan cita rasa Jepang
+      </p>
+
+      <a href="#menu" class="hero-btn">
+        Lihat Menu
+      </a>
+
+    </section>
+
+    <!-- MENU -->
+
+      <section id="menu">
+
+    <h1 class="judul">
+      Our Menu
+    </h1>
+
+    <div class="menu-container">
+
+      <div class="menu-card">
+
+        <img src="matcha.jpg">
+
+        <h2>Matcha Latte</h2>
+
+        <p>Rp 20.000</p>
+
+      </div>
+
+      <div class="menu-card">
+
+        <img src="matcha.jpg">
+
+        <h2>Matcha Latte + Boba</h2>
+
+        <p>Rp 25.000</p>
+
+      </div>
+
+    </div>
+
+  </section>
+    <!-- ORDER -->
+
+    <section id="order">
+
+  <h1 class="judul">
+    Order Sekarang
+  </h1>
+
+  <div class="order-box">
+
+        <input
+          type="text"
+          placeholder="Nama"
+          id="nama"
+        />
+
+        <input
+          type="text"
+          placeholder="No Telepon"
+          id="telp"
+        />
+
+        <!-- MATCHA LATTE -->
+
+        <div class="menu-order">
+
+          <div>
+
+            <h3>
+              Matcha Latte
+            </h3>
+
+            <p>
+              Rp 20.000
+            </p>
+
+          </div>
+
+          <input
+            type="number"
+            id="matcha"
+            value="0"
+            min="0"
+          />
+
+        </div>
+
+        <!-- MATCHA + BOBA -->
+
+        <div class="menu-order">
+
+          <div>
+
+            <h3>
+              Matcha Latte + Boba
+            </h3>
+
+            <p>
+              Rp 25.000
+            </p>
+
+          </div>
+
+          <input
+            type="number"
+            id="boba"
+            value="0"
+            min="0"
+          />
+
+        </div>
+
+        <button onclick="pesanSekarang()">
+          Pesan Sekarang
+        </button>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- PAYMENT POPUP -->
+
+  <div
+    class="payment-popup"
+    id="paymentPopup"
+  >
+
+    <div class="payment-box">
+
+      <h2>
+        Pembayaran
+      </h2>
+
+      <p id="totalHarga">
+        Total: Rp 0
+      </p>
+
+      <img
+  src="qris.jpg"
+  class="qris-image"
+/>
+
+<p class="rekening-title">
+  Transfer BCA
+</p>
+
+<h3>
+  1404444789 (Vinson Loreno)
+</h3>
+
+
+
+<label class="upload-btn">
+
+  📷 Upload Bukti Transfer
+
+  <input
+    type="file"
+    id="buktiTransfer"
+    accept="image/*"
+    hidden
+  >
+
+</label>
+
+<p id="fileName">
+  Belum ada file dipilih
+</p>
+
+<button onclick="kirimPesanan()">
+  Kirim Pesanan
+</button>
+
+<button onclick="closePopup()">
+  Tutup
+</button>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
